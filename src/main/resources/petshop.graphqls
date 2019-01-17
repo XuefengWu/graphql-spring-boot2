@@ -5,6 +5,14 @@ type Query {
 type Pet {
     id: Int!
     name: String
+    birthDate: String
+    owner: Owner!
+}
+
+type Owner {
+    firstName:String
+    lastName:String
+    pets: [Pet]
 }
 
 enum Animal {

@@ -25,3 +25,10 @@ POST http://localhost:8080/graphql
 	"query":"{pets {name}}"
 }
 ```
+bit more complex
+POST http://localhost:8080/graphql
+```
+{
+	"query":"{pets {name birthDate owner{firstName lastName}}}"
+}
+```
